@@ -1,0 +1,5 @@
+geometry_msgs/Pose end_effector_pose
+---
+moveit_msgs/RobotState[] ik_solutions
+---
+moveit_msgs/RobotState ik_feedback

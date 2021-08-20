@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find fanuc_moveit_config)/launch/demo.launch"/>
+    <node name="fanuc_tf_listener_node" type="fanuc_tf_listener_node" pkg="fanuc_tf_listener" output="screen" launch-prefix="gnome-terminal --command"/>
+</launch>

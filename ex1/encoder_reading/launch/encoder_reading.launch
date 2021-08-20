@@ -1,0 +1,4 @@
+<launch>
+    <node name="publisher_node" type="publisher_node" pkg="encoder_reading" output="screen" launch-prefix="gnome-terminal --command"/>
+    <node name="subscriber_node" type="subscriber_node" pkg="encoder_reading" output="screen" launch-prefix="gnome-terminal --command"/>
+</launch>

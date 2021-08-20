@@ -1,0 +1,10 @@
+<launch>
+
+  <include file="$(find fanuc_moveit_config)/launch/demo.launch">
+  </include>
+
+  <param name="planning_group_name" value="fanuc20ia"/>
+
+  <node name="server_node" pkg="kinematics_action" type="server_node" output="screen"/>
+
+</launch>

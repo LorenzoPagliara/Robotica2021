@@ -1,0 +1,2 @@
+std_msgs/String text
+std_msgs/Float64MultiArray joint_positions

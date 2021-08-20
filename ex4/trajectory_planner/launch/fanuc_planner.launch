@@ -1,0 +1,9 @@
+<launch>
+
+    <arg name="debugger_attached" default="false" />
+    <param name="planning_group_name" value="fanuc20ia"/>
+    
+    <node pkg="trajectory_planner" type="planner_node" name="planner_node" output="screen" unless="$(arg debugger_attached)"/>
+    <node pkg="rqt_multiplot" type="rqt_multiplot" name="rqt_multiplot"/>
+
+</launch>

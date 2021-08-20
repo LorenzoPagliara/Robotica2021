@@ -1,0 +1,3 @@
+geometry_msgs/Pose end_effector_pose
+---
+moveit_msgs/RobotState robot_state

@@ -1,0 +1,11 @@
+<launch>
+
+    <include file="$(find fanuc_moveit_config)/launch/planning_context.launch">
+        <arg name="load_robot_description" value="true"/>
+    </include>
+
+    <param name="planning_group_name" value="fanuc20ia"/>
+
+    <node name="ik_server_node" pkg="kinematics_srv" type="ik_server_node" output="screen"/>
+
+</launch>
